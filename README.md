@@ -32,22 +32,6 @@ Based on the Question and the Context given, the algorithm forms a right answer 
 
 •	Different other libraries have been used for preprocessing to form the answer, which include nltk and regular expression.
 
-1.3.	Literature Review
-
-1.	AQuASyS: A Question Answering System for Arabic – Gives more attention to the question analysis in order to extract the valuable information. Designed to give fact based question answer (person, location, organization, time etc.) There are various modules built in order to maintain the workflow. The algorithm also uses ranking in order to choose the appropriate answer from the passage given [1].
-
-2.	Towards an Arabic QAS – Process the Question in order to obtain useful information about the type of answer looking for and extracts the question keywords and named entities. Process the documents in order to retrieve those passages with the highest probability of containing answer. Extracts answer from the retrieved passages taking into account the constraints of QA module. Named Entity Recognition is given the highest priority [2].
-
-3.	German Question Answering – Typing answer in Natural Language. Question goes through query classification and tries to infer the use case for finding general information or retrieving structured sales etc. This was basically a Customer relationship management platform. QA pipelines are built to look for the order [3].
-
-4.	Thai Wikipedia Dataset – First approach is knowledge base Question Answering. System will find an answer likely to be correct to return as answer. Second approach is text based Question Answering, reading comprehension which is finding answer from the given text. The question in the dataset may not be as similar as asked by the human naturally and it is a bias of their work. Transfer learning is used as limited resources are there. Process of using a pre – trained language model that had train with huge dataset. BERT and ROBERTA were used to compare the performance [4].
-
-5.	AQS: Arabic Question Answering System based on SVM, SVD and LSI – First phase will use SVM to classify query into the corresponding class. Second phase uses LSI to retrieve the relevant documents with the selected paragraphs that has the answer. Documents are tokenized into words. After tokenization, stop word elimination to remove useful words. Light Arabic Stemmer used for stemming the set of words in order to remove suffix. The main context of LSI is to examine if a specific word exists or not by applying similarity process through the documents. SVD works to estimate the structure in words over all the documents [5].
-
-6.	Hybrid Approach for Punjabi Question Answering System – Sentences were selected from the paragraph based on the Parts of Speech tagging and ranking priority, when the sentence was finalized, then the specific question algorithms were used to form the answers by mixing some part of the question and some part of the sentence where necessary [6].
-
-7.	A Cross–Language Question/Answering–System for German and English – This was the first cross lingual and monolingual German English Question Answering system, so the main aim was to implement the system instead of fine tuning it. They have used named entity recognition in order to find name, place, location etc. to find the answer [7].
-
 The program starts off with getting an input from the user, the input will be text sentence and question regarding that text. After this the question is been classified, once classified, it will look for that particular algorithm in order to form the answer. Now the specific question algorithms are as follows:
 
 	What Algorithm Pseudo code (શું)
@@ -217,35 +201,5 @@ Answer = X1_ + Z +" "+ U
 Given Paragraph Sentence: મેં સુરત શહેરની મુલાકાત લીધી
 Resulting Answer: અમે સુરત મુલાકાત લીધી	
 
-1.5.	Technology Used
 
-•	Python as the base language for coding.
-
-•	Nltk was used for pre – processing and to tokenize the Text.
-
-•	INDO WORDNET API was used in order to extract the Gujarati dictionary.
-
-•	Regular Expression was used in order to extract Date and Time information from the text.
-
-•	 Try Exceptions blocks were used with nested implementation.
-
-1.6.	Improvement proposed in the current system
-
-•	The Gujarati Question Answering System built is the first ever full fledge System built, there are other Systems out there but with different languages, and due to difference in the language, the whole System gets changed.
-
-•	As of the System is made from scratch, have taken references from other research work for the design but the algorithms are freshly made.
-
-1.7.	Testing of New System
-
-•	The current System is working only on sentences.
-
-•	Designing something sort of an algorithm which can extract sentence from the paragraph and then form answer from that sentence.
-
-•	There are more complexities to add as the current system is too basic.
-
-•	There will be complexities in both Question and the Answers as the user will ask the Questions as complex as it can be.
-
-•	More Question classifications can be added as per the need.
-
-•	The specific Question Algorithms can be made more perfect by adding more exceptions
 
